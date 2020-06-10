@@ -40,6 +40,6 @@ public String displaySearchResults(Model model, @RequestParam String searchType,
             model.addAttribute("title", "Jobs with" + columnChoices.get(searchType) + ":" + searchTerm);
         }
         model.addAttribute("jobs", jobs);
-        return "search-results";
+        return "search.html";
     }
 }
